@@ -8,6 +8,26 @@
     <title> PORTFOLIO</title>
    <style>
    
+.hamburger {
+  display: none; /* Hide the hamburger menu icon by default */
+  cursor: pointer;
+}   
+
+@media (max-width: 768px) {
+  /* Styles for mobile devices */
+  .hamburger {
+    display: block; /* Show the hamburger menu icon on mobile devices */
+  }
+  
+  /* Styles to hide the regular menu items on mobile devices */
+  .menu {
+    display: none;
+  }
+  
+  /* Styles to show the menu items when the hamburger icon is clicked */
+  .menu.show-mobile {
+    display: block;
+  }
 
 * {
 margin: 0;
@@ -128,6 +148,13 @@ justify-content: space-between;
 <body>                                     
 <header class="header">
 
+<div class="hamburger" onclick="toggleMenu()"> <!-- Add onclick event to toggle the menu -->
+    <!-- Hamburger icon goes here -->
+  </div>
+  
+  <nav class="menu">
+    <!-- Regular menu items go here -->
+  </nav>
    <a href="#" class="logo">Miguel.</a>	
 	<nav class="navbar">
 		<a href="#" class="active">Home</a>
@@ -146,4 +173,11 @@ justify-content: space-between;
 	<div class="btn-box">
 	<a href="#">Hire me</a>
 	<a href="#"">Let's talk</a>
-    
+	
+	<script>
+	    function toggleMenu() {
+  var menu = document.querySelector('.menu');
+  menu.classList.toggle('show-mobile');
+}
+	</script>
+    </body>
