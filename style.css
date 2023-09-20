@@ -24,4 +24,14 @@ background: #fffff;
 
 .logo { 
   font-size: 25px;
+  color: #FCB0CB; 
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a {
+  font-size: 18px;
   color: #FCB0CB;
+  text-decoration: none;
+  font-weight: 600;
+}
