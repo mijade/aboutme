@@ -298,7 +298,7 @@ body:hover .vignette {
 }
 
   nav #check:checked ~ ul {
-    left: 0;
+    left: -40px;
   }
 
   ul li a {
