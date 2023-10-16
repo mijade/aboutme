@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <link rel="SHORTCUT ICON" href="Lovepik_com-401373672-programmer-knocking-code-icon-free-vector-illustration-material.png" type="image">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Miguel Soriano</title>
+    <style>
+
+.container {
+    background-color: #00254;
+    margin: 100px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0px 20px #fcb0cb;
+    transition: 0.5s;
+}
+
+h1 {
+    color: white;
+}
+h1:hover {
+    color: white;
+    text-shadow: 0 0px 20px deepskyblue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid white;
+    border-radius: 3px;
+    box-shadow: 0 0px 10px #fcb0cb;
+    
+}
+
+ .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin-top: 15px;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+        font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .btn:nth-child(2) {
+    background: transparent;
+    color: white;
+  }
+
+  .btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: .5s;
+  }
+
+  .btn:hover::before {
+    width: 100%;
+  }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">Mijade</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="index.html" target="-self">Home</a></li>
+          <li><a href="certi.html" target="-self">Certificate</a></li>
+          <li><a href="contact.html" target="-self">Contact</a></li>
+          <li><label class="switch"> <input type="checkbox" id="toggleButton"> <span class="slider round"></span> </label></li>
+        </ul>
+      </div>
+    </nav>
+    
+
+
+<div class="container">
+
+<h1>Contact Form</h1>
+
+<form action="https://formspree.io/f/xrgwrywn" method="POST">
+
+<input type="text" name="Name" placeholder="Full Name" required> <input type="email" name="Email" placeholder="Email" required>
+
+<select name="Continent">
+
+<option>Africa</option>
+
+<option>Antarctica</option>
+
+<option>Asia</option>>
+
+<option>Australia</option>
+
+<option>Europe</option>
+
+<option>North America</option>
+
+<option>South America</option>
+
+</select>
+
+<textarea name="Message" placeholder="Message" required></textarea> <button type="submit" class="btn">Send</button>
+
+</form>
+
+</div>
+ <script src="script.js"></script>
+   </body>
+</html>
